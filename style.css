@@ -1,0 +1,106 @@
+h1{
+    text-align: center;
+    font-size: 3.75rem;
+line-height: 1;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+      
+    
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 24rem;
+    height:100vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    align-items: center;
+    /* Lined paper effect */
+    background-image: 
+      linear-gradient(to bottom, #ddd 1px, transparent 1px); /* Horizontal lines */
+    background-size: 100% 30px; /* Adjust spacing between lines */
+    position: relative;
+    
+}
+.placeholder{
+    block-size: 2rem;
+    display:inline-flex;
+    border-radius:5px;
+    
+}
+.add{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add:hover{
+    background-color:burlywood
+}
+.adding{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+.ele{
+    display:flex;
+    flex:column;
+    
+}
+.todo-text {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style for the checkbox */
+.todo-checkbox {
+    cursor: pointer;
+    transform: scale(1.5); /* Adjust this value to make it bigger or smaller */
+    margin-right: 0px;
+    
+}
+.todo-text{
+    font-size: 2rem;
+line-height: 1;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;
+    margin-top: 28px;
+    justify-content: flex-end;
+    width: 100%;
+    background-color:transparent;
+}
+.delete-button {
+    background: none;
+    border: none;
+    align-self: self-end;
+    color: #d70303;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: #c62626;
+    border-style:dashed;
+}
+
+/* Style when a task is completed */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
